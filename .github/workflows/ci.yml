@@ -18,9 +18,11 @@ jobs:
       with:
         java-version: '17'
         
-    - name: Install the Gradle
-      run: ./gradlew install  
-    
+    - name: Install Gradle
+      uses: gradle/gradle-build-action@v2
+      with:
+        gradle-version: '7.4.2' # specify the desired Gradle version
+        
     - name: Build with Gradle
       run: ./gradlew build
 
