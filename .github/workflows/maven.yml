@@ -38,7 +38,7 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
       run: |
-          mvn sonar:sonar -Dsonar.projectKey=dnaresh4_loans-service-restapi -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.TOKEN }}
+          mvn sonar:sonar -Dsonar.projectKey=main -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=${{ secrets.TOKEN }}
 
 
     - name: Download SonarQube Report
