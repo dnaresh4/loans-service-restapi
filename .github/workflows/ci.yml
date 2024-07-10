@@ -19,7 +19,7 @@ jobs:
         java-version: '17'
 
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./mvn package
 
     - name: SonarQube Scan
       env:
