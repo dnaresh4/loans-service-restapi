@@ -17,9 +17,12 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: '17'
-
+        
+    - name: Install the Gradle
+      run: ./gradlew install  
+    
     - name: Build with Gradle
-      run: ./mvn package
+      run: ./gradlew build
 
     - name: SonarQube Scan
       env:
