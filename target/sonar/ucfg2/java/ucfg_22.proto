@@ -1,12 +1,12 @@
 
-úcom.eazybytes.loans.mapper.LoansMapper#mapToLoansDto(Lcom/eazybytes/loans/entity/Loans;Lcom/eazybytes/loans/dto/LoansDto;)Lcom/eazybytes/loans/dto/LoansDto;Å
-w/home/runner/work/loans-service-restapi/loans-service-restapi/src/main/java/com/eazybytes/loans/mapper/LoansMapper.java (("1*I
-1	 	(":
- (.
-,
-loansDto com.eazybytes.loans.dto.LoansDto:5
-) (5)
+ôcom.eazybytes.loans.mapper.LoansMapper#mapToLoans(Lcom/eazybytes/loans/dto/LoansDto;Lcom/eazybytes/loans/entity/Loans;)Lcom/eazybytes/loans/entity/Loans;Å
+w/home/runner/work/loans-service-restapi/loans-service-restapi/src/main/java/com/eazybytes/loans/mapper/LoansMapper.java (""1*F
+1 ("7
+ (+
+)
 loans com.eazybytes.loans.entity.Loans:8
-6 (G,
-loansDto com.eazybytes.loans.dto.LoansDtoB*"(
+# (5,
+loansDto com.eazybytes.loans.dto.LoansDto:5
+6 (A)
+loans com.eazybytes.loans.entity.LoansB*"(
 &com.eazybytes.loans.mapper.LoansMapperH

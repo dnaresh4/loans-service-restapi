@@ -1,104 +1,15 @@
 
-|com.eazybytes.loans.controller.LoansController#fetchLoanDetails(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;‰
-/home/runner/work/loans-service-restapi/loans-service-restapi/src/main/java/com/eazybytes/loans/controller/LoansController.javaU$ U(4"startingBlock*´
-startingBlockU4 W(S¨
-¥
-B E(
-%5"
-__annotate*G
-
-__unknown_file (+)
-'io.swagger.v3.oas.annotations.Operation*>
-
-__unknown_file ("
- 
-mobileNumberjava.lang.Stringµ
-²
-F S(
-%6"
-__annotate*T
-
-__unknown_file (86
-4io.swagger.v3.oas.annotations.responses.ApiResponses*>
-
-__unknown_file ("
- 
-mobileNumberjava.lang.Stringµ
-²
-U5 U(B
-%7"
-__annotate*T
-
-__unknown_file (86
-4org.springframework.web.bind.annotation.RequestParam*>
-
-__unknown_file ("
- 
-mobileNumberjava.lang.String¨
-¥
-	V? V(Œ
-%8"
-__annotate*F
-
-__unknown_file (*(
-&jakarta.validation.constraints.Pattern*>
-
-__unknown_file ("
- 
-mobileNumberjava.lang.StringÍ
-Ê
-WF W(R 
-mobileNumberjava.lang.String"__annotation*"
-
-__unknown_file (
-
-%5*"
-
-__unknown_file (
-
-%6*"
-
-__unknown_file (
-
-%7*"
-
-__unknown_file (
-
-%8*
-1*•
-1X X()§
-¤
-X X()/
-%0)com.eazybytes.loans.service.ILoansService"__id*a
-
-__unknown_file (E*C0
-.com.eazybytes.loans.controller.LoansController"
-iLoansServiceÎË
-X X(A&
-%1 com.eazybytes.loans.dto.LoansDto"icom.eazybytes.loans.service.ILoansService#fetchLoan(Ljava/lang/String;)Lcom/eazybytes/loans/dto/LoansDto;*M
-
-__unknown_file (1
-/
-%0)com.eazybytes.loans.service.ILoansService*>
-
-__unknown_file ("
- 
-mobileNumberjava.lang.String2fetchLoan(Ljava/lang/String;)‡
-„
-X X(B,
-loansDto com.eazybytes.loans.dto.LoansDto"__id*D
-
-__unknown_file ((
-&
-%1 com.eazybytes.loans.dto.LoansDtoa
+com.eazybytes.loans.controller.LoansController#updateLoanDetails(Lcom/eazybytes/loans/dto/LoansDto;)Lorg/springframework/http/ResponseEntity;‰
+/home/runner/work/loans-service-restapi/loans-service-restapi/src/main/java/com/eazybytes/loans/controller/LoansController.javas' s(8"startingBlock*Ó
+2v v(!a
 _
-Y% Y(2)
+w w())
 %2#org.springframework.http.HttpStatus"__id*"
 
 __unknown_file (
 ""ë
 è
-Y Y(39
+v w(*9
 %33org.springframework.http.ResponseEntity$BodyBuilder"Žorg.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
 
 __unknown_file (+")
@@ -106,20 +17,320 @@ _
 
 __unknown_file (+
 )
-%2#org.springframework.http.HttpStatusòï
-Y Y(B-
-%4'org.springframework.http.ResponseEntity"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*W
+%2#org.springframework.http.HttpStatusO
+M
+x* x(C
+%4java.lang.String"__id*#
+
+__unknown_file (
+200j
+h
+xE x(_
+%5java.lang.String"__id*>
+
+__unknown_file (" 
+Request processed successfully¡ž
+v x(a
+%6"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*W
 
 __unknown_file (;
 9
-%33org.springframework.http.ResponseEntity$BodyBuilder*J
+%33org.springframework.http.ResponseEntity$BodyBuilder*"
+
+__unknown_file (
+""2body(Ljava/lang/Object;)"
+v x(b
+
+%6*„
+3t t()§
+¤
+t t()/
+%0)com.eazybytes.loans.service.ILoansService"__id*a
+
+__unknown_file (E*C0
+.com.eazybytes.loans.controller.LoansController"
+iLoansServiceÂ¿
+t t(>
+%1boolean"Ycom.eazybytes.loans.service.ILoansService#updateLoan(Lcom/eazybytes/loans/dto/LoansDto;)Z*M
+
+__unknown_file (1
+/
+%0)com.eazybytes.loans.service.ILoansService*J
 
 __unknown_file (.
 ,
-loansDto com.eazybytes.loans.dto.LoansDto2body(Ljava/lang/Object;)";
-Y Y(C/
--
-%4'org.springframework.http.ResponseEntity:,
-U5 W(R 
-mobileNumberjava.lang.StringB20
+loansDto com.eazybytes.loans.dto.LoansDto2.updateLoan(Lcom/eazybytes/loans/dto/LoansDto;)*
+2
+1*í
+startingBlocks8 s(_†
+ƒ
+
+__unknown_file (
+%12"__id*Z
+
+__unknown_file (>*<
+,
+loansDto com.eazybytes.loans.dto.LoansDto"
+
+loanNumber„
+
+
+__unknown_file (
+%13"__id*X
+
+__unknown_file (<*:
+,
+loansDto com.eazybytes.loans.dto.LoansDto"
+
+loanTypeˆ
+…
+
+__unknown_file (
+%14"__id*\
+
+__unknown_file (@*>
+,
+loansDto com.eazybytes.loans.dto.LoansDto"
+mobileNumberŽ
+‹
+\ _(
+%15"
+__annotate*G
+
+__unknown_file (+)
+'io.swagger.v3.oas.annotations.Operation*#
+
+__unknown_file (
+
+%13›
+˜
+` q(
+%16"
+__annotate*T
+
+__unknown_file (86
+4io.swagger.v3.oas.annotations.responses.ApiResponses*#
+
+__unknown_file (
+
+%13~
+|
+s9 s(?
+%17"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*#
+
+__unknown_file (
+
+%13š
+—
+s@ s(L
+%18"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%13ë
+è
+sV s(^:
+,
+loansDto com.eazybytes.loans.dto.LoansDto"
+
+loanType"__annotation*#
+
+__unknown_file (
+
+%15*#
+
+__unknown_file (
+
+%16*#
+
+__unknown_file (
+
+%17*#
+
+__unknown_file (
+
+%18Ž
+‹
+\ _(
+%19"
+__annotate*G
+
+__unknown_file (+)
+'io.swagger.v3.oas.annotations.Operation*#
+
+__unknown_file (
+
+%12›
+˜
+` q(
+%20"
+__annotate*T
+
+__unknown_file (86
+4io.swagger.v3.oas.annotations.responses.ApiResponses*#
+
+__unknown_file (
+
+%12~
+|
+s9 s(?
+%21"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*#
+
+__unknown_file (
+
+%12š
+—
+s@ s(L
+%22"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%12í
+ê
+sV s(^<
+,
+loansDto com.eazybytes.loans.dto.LoansDto"
+
+loanNumber"__annotation*#
+
+__unknown_file (
+
+%19*#
+
+__unknown_file (
+
+%20*#
+
+__unknown_file (
+
+%21*#
+
+__unknown_file (
+
+%22Ž
+‹
+\ _(
+%23"
+__annotate*G
+
+__unknown_file (+)
+'io.swagger.v3.oas.annotations.Operation*#
+
+__unknown_file (
+
+%14›
+˜
+` q(
+%24"
+__annotate*T
+
+__unknown_file (86
+4io.swagger.v3.oas.annotations.responses.ApiResponses*#
+
+__unknown_file (
+
+%14~
+|
+s9 s(?
+%25"
+__annotate*8
+
+__unknown_file (
+jakarta.validation.Valid*#
+
+__unknown_file (
+
+%14š
+—
+s@ s(L
+%26"
+__annotate*S
+
+__unknown_file (75
+3org.springframework.web.bind.annotation.RequestBody*#
+
+__unknown_file (
+
+%14ï
+ì
+sV s(^>
+,
+loansDto com.eazybytes.loans.dto.LoansDto"
+mobileNumber"__annotation*#
+
+__unknown_file (
+
+%23*#
+
+__unknown_file (
+
+%24*#
+
+__unknown_file (
+
+%25*#
+
+__unknown_file (
+
+%26*
+3*÷
+1z z(!a
+_
+{ {(9)
+%7#org.springframework.http.HttpStatus"__id*"
+
+__unknown_file (
+""ë
+è
+z {(:9
+%83org.springframework.http.ResponseEntity$BodyBuilder"Žorg.springframework.http.ResponseEntity#status(Lorg/springframework/http/HttpStatusCode;)Lorg/springframework/http/ResponseEntity$BodyBuilder;*G
+
+__unknown_file (+")
+'org.springframework.http.ResponseEntity*G
+
+__unknown_file (+
+)
+%7#org.springframework.http.HttpStatusO
+M
+|* |(C
+%9java.lang.String"__id*#
+
+__unknown_file (
+417‹
+ˆ
+|E |(f
+%10java.lang.String"__id*]
+
+__unknown_file (A?
+=Update operation failed. Please try again or contact Dev team¢Ÿ
+z |(h
+%11"uorg.springframework.http.ResponseEntity$BodyBuilder#body(Ljava/lang/Object;)Lorg/springframework/http/ResponseEntity;*W
+
+__unknown_file (;
+9
+%83org.springframework.http.ResponseEntity$BodyBuilder*"
+
+__unknown_file (
+""2body(Ljava/lang/Object;)"
+z |(i
+
+%11:8
+s9 s(^,
+loansDto com.eazybytes.loans.dto.LoansDtoB20
 .com.eazybytes.loans.controller.LoansControllerH

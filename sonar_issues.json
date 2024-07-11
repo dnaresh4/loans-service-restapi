@@ -1,15 +1,52 @@
 [
     {
+        "key": "AZCfkUJrbMv8YygwBF5R",
+        "rule": "java:S1118",
+        "severity": "MAJOR",
+        "component": "dnaresh4_loans-service-restapi:src/main/java/com/eazybytes/loans/constants/LoansConstants.java",
+        "project": "dnaresh4_loans-service-restapi",
+        "line": 3,
+        "hash": "e38bda25e0a64b67ffb0a03afc4e09ad",
+        "textRange": {
+            "startLine": 3,
+            "endLine": 3,
+            "startOffset": 19,
+            "endOffset": 33
+        },
+        "flows": [],
+        "status": "OPEN",
+        "message": "Add a private constructor to hide the implicit public one.",
+        "effort": "5min",
+        "debt": "5min",
+        "author": "",
+        "tags": [
+            "design"
+        ],
+        "creationDate": "2024-07-11T04:13:09+0200",
+        "updateDate": "2024-07-11T04:13:09+0200",
+        "type": "CODE_SMELL",
+        "organization": "dnaresh4",
+        "cleanCodeAttribute": "CLEAR",
+        "cleanCodeAttributeCategory": "INTENTIONAL",
+        "impacts": [
+            {
+                "softwareQuality": "MAINTAINABILITY",
+                "severity": "MEDIUM"
+            }
+        ],
+        "issueStatus": "OPEN"
+    },
+    {
         "key": "AZCfKyYcAPDa8PzhDiaq",
         "rule": "java:S125",
         "severity": "MAJOR",
         "component": "dnaresh4_loans-service-restapi:src/main/java/com/eazybytes/loans/constants/LoansConstants.java",
         "project": "dnaresh4_loans-service-restapi",
-        "line": 18,
+        "line": 15,
         "hash": "3c923f3b739c8d55ede6b5b0589fc62c",
         "textRange": {
-            "startLine": 18,
-            "endLine": 18,
+            "startLine": 15,
+            "endLine": 15,
             "startOffset": 7,
             "endOffset": 54
         },
@@ -19,8 +56,8 @@
                     {
                         "component": "dnaresh4_loans-service-restapi:src/main/java/com/eazybytes/loans/constants/LoansConstants.java",
                         "textRange": {
-                            "startLine": 19,
-                            "endLine": 19,
+                            "startLine": 16,
+                            "endLine": 16,
                             "startOffset": 7,
                             "endOffset": 107
                         },
