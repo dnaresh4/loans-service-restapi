@@ -49,4 +49,4 @@ def apply_fixes(issues):
 
 if __name__ == "__main__":
     issues = load_issues('sonar_issues.json')
-    apply_fixes(issues
+    apply_fixes(issues)
