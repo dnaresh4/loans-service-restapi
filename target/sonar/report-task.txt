@@ -4,5 +4,5 @@ serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.55853
 branch=main
 dashboardUrl=https://sonarcloud.io/dashboard?id=dnaresh4_loans-service-restapi&branch=main
-ceTaskId=AZCfvvUA1cnLNn175iaJ
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZCfvvUA1cnLNn175iaJ
+ceTaskId=AZCgBvecmcZv_rpAXkpB
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZCgBvecmcZv_rpAXkpB
