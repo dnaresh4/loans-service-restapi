@@ -24,7 +24,7 @@ def apply_fixes(issues):
             continue
 
         file_path = component.replace('.', os.sep) + '.java'
-        file_path = os.path.join('src', 'main', 'java', file_path)
+        file_path = os.path.join('src/main/java', file_path)
 
         if not os.path.exists(file_path):
             print(f"File not found: {file_path}")
