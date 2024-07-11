@@ -1,47 +1,37 @@
+import json
 import os
-import requests
 
-def get_sonar_issues(sonar_host, project_key, sonar_token):
-    url = f"{sonar_host}/api/issues/search?projectKeys={project_key}"
-    headers = {
-        'Authorization': f'Bearer {sonar_token}'
-    }
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()  # Raise an HTTPError if the HTTP request returned an unsuccessful status code
-    issues = response.json().get('issues', [])
-    return issues
+def load_issues(file_path):
+    with open(file_path, 'r') as file:
+        return json.load(file)
 
-def fix_code(file_path, issue):
-    # Debugging statement
-    print(f"Attempting to open file: {file_path}")
+def apply_fix(file_path, issue):
+    # Example fix: Replace all occurrences of a deprecated method with a new one
+    # This is a placeholder; real fixes will depend on the issue type and require more sophisticated handling
+    with open(file_path, 'r') as file:
+        content = file.read()
 
-    # Adjust the file path if necessary
-    adjusted_file_path = os.path.join('src/main/java', file_path.replace(':', '/'))
+    # Placeholder for an actual fix, using Copilot suggestions
+    content = content.replace('deprecatedMethod()', 'newMethod()')
 
-    print(f"Adjusted file path: {adjusted_file_path}")
-
-    if not os.path.exists(adjusted_file_path):
-        print(f"File not found: {adjusted_file_path}")
-        return
-
-    with open(adjusted_file_path, 'r') as file:
-        # Read and fix code here
-        pass
+    with open(file_path, 'w') as file:
+        file.write(content)
 
 def apply_fixes(issues):
     for issue in issues:
         component = issue.get('component')
-        text_range = issue.get('textRange')
-        file_path = component.replace('.', '/') + ".java"
-        fix_code(file_path, issue)
+        if not component:
+            continue
 
-# Usage
-sonar_host = 'https://sonarcloud.io'
-project_key = 'loans-service-restapi'
-sonar_token = '273b52a0e0986e3d298f64e0768d31d01a0de09c'
+        file_path = component.replace('.', os.sep) + '.java'
+        file_path = os.path.join('src', 'main', 'java', file_path)
 
-try:
-    issues = get_sonar_issues(sonar_host, project_key, sonar_token)
-    apply_fixes(issues)
-except Exception as e:
-    print(f"Error: {e}")
+        if not os.path.exists(file_path):
+            print(f"File not found: {file_path}")
+            continue
+
+        apply_fix(file_path, issue)
+
+# Load issues and apply fixes
+issues = load_issues('sonar_issues.json')
+apply_fixes(issues)
