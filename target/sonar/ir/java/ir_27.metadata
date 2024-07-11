@@ -1,0 +1,2 @@
+com.eazybytes.loans.audit.AuditAwareImpl#getCurrentAuditor()Ljava/util/Optional;
+java.util.Optional#of(Ljava/lang/Object;)Ljava/util/Optional;

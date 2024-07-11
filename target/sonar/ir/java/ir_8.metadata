@@ -1,0 +1,8 @@
+com.eazybytes.loans.service.impl.LoansServiceImpl#createLoan(Ljava/lang/String;)V
+java.util.Optional#isPresent()Z
+com.eazybytes.loans.exception.LoanAlreadyExistsException#instance-init#
+com.eazybytes.loans.exception.LoanAlreadyExistsException#<init>(Ljava/lang/String;)V
+com.eazybytes.loans.service.impl.LoansServiceImpl#createNewLoan(Ljava/lang/String;)Lcom/eazybytes/loans/entity/Loans;
+==
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+findByMobileNumber com.eazybytes.loans.repository.LoansRepository#findByMobileNumber(Ljava/lang/String;)Ljava/util/Optional;

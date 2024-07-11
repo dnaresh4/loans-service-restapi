@@ -1,0 +1,71 @@
+
+ucom.eazybytes.loans.service.impl.LoansServiceImpl#createNewLoan(Ljava/lang/String;)Lcom/eazybytes/loans/entity/Loans;ç
+Ç/home/runner/work/loans-service-restapi/loans-service-restapi/src/main/java/com/eazybytes/loans/service/impl/LoansServiceImpl.java' '("1*˜
+1( ((#VT
+( ((!&
+%0 com.eazybytes.loans.entity.Loans" com.eazybytes.loans.entity.LoansÖ
+Ç
+( ((#
+%1"*com.eazybytes.loans.entity.Loans#<init>()V*D
+
+__unknown_file ((
+&
+%0 com.eazybytes.loans.entity.LoansÜ
+É
+( (($+
+newLoan com.eazybytes.loans.entity.Loans"__id*D
+
+__unknown_file ((
+&
+%0 com.eazybytes.loans.entity.Loans64
+)4 )(:
+%2java.util.Random"java.util.Randomd
+b
+)0 )(<
+%3"java.util.Random#<init>()V*4
+
+__unknown_file (
+
+%2java.util.Randomûõ
+)0 )(O	
+%4int"java.util.Random#nextInt(I)I*4
+
+__unknown_file (
+
+%2java.util.Random*$
+
+__unknown_file (2Ä“ì≠2
+nextInt(I)ß
+§
+* *(=
+%5java.lang.String",java.lang.Long#toString(J)Ljava/lang/String;*.
+
+__unknown_file ("
+java.lang.Long*"
+
+__unknown_file (
+""U
+S
+, ,(4
+%6java.lang.String"__id*)
+
+__unknown_file (
+	Home LoanA
+?
+- -(:	
+%7int"__id*"
+
+__unknown_file (
+""A
+?
+/% /(B	
+%8int"__id*"
+
+__unknown_file (
+"""9
+0 0(-
++
+newLoan com.eazybytes.loans.entity.Loans:,
+'  '(3 
+mobileNumberjava.lang.StringB53
+1com.eazybytes.loans.service.impl.LoansServiceImpl

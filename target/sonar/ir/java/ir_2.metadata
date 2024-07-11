@@ -1,0 +1,9 @@
+com.eazybytes.loans.exception.GlobalExceptionHandler#handleMethodArgumentNotValid(Lorg/springframework/web/bind/MethodArgumentNotValidException;Lorg/springframework/http/HttpHeaders;Lorg/springframework/http/HttpStatusCode;Lorg/springframework/web/context/request/WebRequest;)Lorg/springframework/http/ResponseEntity;
+org.springframework.validation.BindException#getBindingResult()Lorg/springframework/validation/BindingResult;
+java.util.HashMap#<init>()V
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatusCode;)V
+java.util.HashMap#instance-init#
+org.springframework.http.ResponseEntity#instance-init#
+==
+getAllErrors org.springframework.validation.Errors#getAllErrors()Ljava/util/List;
+forEach java.lang.Iterable#forEach(Ljava/util/function/Consumer;)V

@@ -1,0 +1,3 @@
+com.eazybytes.loans.controller.LoansController#createLoan(Ljava/lang/String;)Lorg/springframework/http/ResponseEntity;
+==
+createLoan com.eazybytes.loans.service.ILoansService#createLoan(Ljava/lang/String;)V

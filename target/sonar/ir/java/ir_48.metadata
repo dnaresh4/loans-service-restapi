@@ -1,0 +1,1 @@
+com.eazybytes.loans.mapper.LoansMapper#mapToLoans(Lcom/eazybytes/loans/dto/LoansDto;Lcom/eazybytes/loans/entity/Loans;)Lcom/eazybytes/loans/entity/Loans;

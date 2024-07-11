@@ -1,0 +1,8 @@
+com.eazybytes.loans.service.impl.LoansServiceImpl#createNewLoan(Ljava/lang/String;)Lcom/eazybytes/loans/entity/Loans;
+java.lang.Long#toString(J)Ljava/lang/String;
+com.eazybytes.loans.entity.Loans#<init>()V
+java.util.Random#instance-init#
+com.eazybytes.loans.entity.Loans#instance-init#
+java.util.Random#<init>()V
+==
+nextInt java.util.Random#nextInt(I)I

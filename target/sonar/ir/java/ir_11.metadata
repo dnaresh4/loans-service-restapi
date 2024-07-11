@@ -1,0 +1,5 @@
+com.eazybytes.loans.service.impl.LoansServiceImpl#updateLoan(Lcom/eazybytes/loans/dto/LoansDto;)Z
+com.eazybytes.loans.mapper.LoansMapper#mapToLoans(Lcom/eazybytes/loans/dto/LoansDto;Lcom/eazybytes/loans/entity/Loans;)Lcom/eazybytes/loans/entity/Loans;
+==
+save org.springframework.data.repository.CrudRepository#save(Ljava/lang/Object;)Ljava/lang/Object;
+findByLoanNumber com.eazybytes.loans.repository.LoansRepository#findByLoanNumber(Ljava/lang/String;)Ljava/util/Optional;

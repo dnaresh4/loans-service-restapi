@@ -1,0 +1,7 @@
+com.eazybytes.loans.service.impl.LoansServiceImpl#fetchLoan(Ljava/lang/String;)Lcom/eazybytes/loans/dto/LoansDto;
+com.eazybytes.loans.dto.LoansDto#instance-init#
+com.eazybytes.loans.mapper.LoansMapper#mapToLoansDto(Lcom/eazybytes/loans/entity/Loans;Lcom/eazybytes/loans/dto/LoansDto;)Lcom/eazybytes/loans/dto/LoansDto;
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+com.eazybytes.loans.dto.LoansDto#<init>()V
+==
+findByMobileNumber com.eazybytes.loans.repository.LoansRepository#findByMobileNumber(Ljava/lang/String;)Ljava/util/Optional;

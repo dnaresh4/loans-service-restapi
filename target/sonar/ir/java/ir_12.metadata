@@ -1,0 +1,5 @@
+com.eazybytes.loans.service.impl.LoansServiceImpl#deleteLoan(Ljava/lang/String;)Z
+java.util.Optional#orElseThrow(Ljava/util/function/Supplier;)Ljava/lang/Object;
+==
+findByMobileNumber com.eazybytes.loans.repository.LoansRepository#findByMobileNumber(Ljava/lang/String;)Ljava/util/Optional;
+deleteById org.springframework.data.repository.CrudRepository#deleteById(Ljava/lang/Object;)V

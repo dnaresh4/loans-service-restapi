@@ -1,0 +1,9 @@
+com.eazybytes.loans.exception.GlobalExceptionHandler#handleResourceNotFoundException(Lcom/eazybytes/loans/exception/ResourceNotFoundException;Lorg/springframework/web/context/request/WebRequest;)Lorg/springframework/http/ResponseEntity;
+null
+com.eazybytes.loans.dto.ErrorResponseDto#instance-init#
+org.springframework.http.ResponseEntity#<init>(Ljava/lang/Object;Lorg/springframework/http/HttpStatusCode;)V
+java.time.LocalDateTime#now()Ljava/time/LocalDateTime;
+org.springframework.http.ResponseEntity#instance-init#
+==
+getDescription org.springframework.web.context.request.WebRequest#getDescription(Z)Ljava/lang/String;
+getMessage java.lang.Throwable#getMessage()Ljava/lang/String;
