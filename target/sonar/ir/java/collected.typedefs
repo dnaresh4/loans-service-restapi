@@ -51,10 +51,7 @@ createLoanvcom.eazybytes.loans.controller.LoansController#createLoan(Ljava/lang
 <init>0com.eazybytes.loans.mapper.LoansMapper#<init>()V¨
 
 mapToLoans™com.eazybytes.loans.mapper.LoansMapper#mapToLoans(Lcom/eazybytes/loans/dto/LoansDto;Lcom/eazybytes/loans/entity/Loans;)Lcom/eazybytes/loans/entity/Loans;®
-mapToLoansDtoœcom.eazybytes.loans.mapper.LoansMapper#mapToLoansDto(Lcom/eazybytes/loans/entity/Loans;Lcom/eazybytes/loans/dto/LoansDto;)Lcom/eazybytes/loans/dto/LoansDto;java.lang.Object«
-java.util.StringTokenizerH
-nextElement9java.util.StringTokenizer#nextElement()Ljava/lang/Object;D
-	nextToken7java.util.StringTokenizer#nextToken()Ljava/lang/String;<
+mapToLoansDtoœcom.eazybytes.loans.mapper.LoansMapper#mapToLoansDto(Lcom/eazybytes/loans/entity/Loans;Lcom/eazybytes/loans/dto/LoansDto;)Lcom/eazybytes/loans/dto/LoansDto;java.lang.Object<
 java.util.Scanner'
 nextIntjava.util.Scanner#nextInt()IY
 java.io.BufferedReader?
@@ -93,4 +90,7 @@ mapToLoans™com.eazybytes.loans.mapper.LoansMapper#mapToLoans(Lcom/eazybytes/lo
 java.util.Scanner'
 nextIntjava.util.Scanner#nextInt()IY
 java.io.BufferedReader?
-readLine3java.io.BufferedReader#readLine()Ljava/lang/String;
+readLine3java.io.BufferedReader#readLine()Ljava/lang/String;«
+java.util.StringTokenizerH
+nextElement9java.util.StringTokenizer#nextElement()Ljava/lang/Object;D
+	nextToken7java.util.StringTokenizer#nextToken()Ljava/lang/String;
