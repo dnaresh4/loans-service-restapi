@@ -1,23 +1,36 @@
 import os
+import openai
 import json
+
+# Set up the OpenAI API key from the environment variable
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def load_issues(file_path):
     with open(file_path, 'r') as file:
         return json.load(file)
 
+def get_openai_suggestion(issue_description, code_snippet):
+    prompt = f"Here is a code snippet:\n{code_snippet}\n\nIssue: {issue_description}\n\nPlease provide a fixed version of the code."
+    response = openai.Completion.create(
+        model="text-davinci-003",
+        prompt=prompt,
+        max_tokens=150
+    )
+    return response.choices[0].text.strip()
+
 def apply_fix(file_path, issue):
     print(f"Applying fix for issue: {issue['message']} in file: {file_path}")
     with open(file_path, 'r') as file:
-        content = file.readlines()
+        content = file.read()
 
-    # Example fix: Replace all occurrences of a deprecated method with a new one
-    for i, line in enumerate(content):
-        # Placeholder logic for applying fixes
-        if 'deprecatedMethod()' in line:
-            content[i] = line.replace('deprecatedMethod()', 'newMethod()')
+    # Get a code snippet to fix
+    code_snippet = content  # This could be refined to only take relevant parts
+    fix_suggestion = get_openai_suggestion(issue['message'], code_snippet)
 
+    # Apply the fix
+    fixed_content = content.replace(code_snippet, fix_suggestion)
     with open(file_path, 'w') as file:
-        file.writelines(content)
+        file.write(fixed_content)
 
 def apply_fixes(issues):
     for issue in issues:
@@ -34,6 +47,6 @@ def apply_fixes(issues):
 
         apply_fix(file_path, issue)
 
-# Load issues and apply fixes
-issues = load_issues('sonar_issues.json')
-apply_fixes(issues)
+if __name__ == "__main__":
+    issues = load_issues('sonar_issues.json')
+    apply_fixes(issues
