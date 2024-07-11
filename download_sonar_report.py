@@ -7,22 +7,19 @@ def get_sonar_issues(sonar_host, project_key, sonar_token):
         'Authorization': f'Bearer {sonar_token}'
     }
     response = requests.get(url, headers=headers)
+    
+    if response.status_code != 200:
+        raise Exception(f"Failed to fetch issues: {response.status_code} - {response.text}")
+    
+    return response.json().get('issues', [])
 
-    # Debugging statements
-    print(f"Status Code: {response.status_code}")
-    print(f"Response Content: {response.text}")
-
-    response.raise_for_status()  # Raise an HTTPError if the HTTP request returned an unsuccessful status code
-
-    issues = response.json().get('issues', [])
-    return issues
+def save_issues_to_file(issues, file_path):
+    with open(file_path, 'w') as file:
+        json.dump(issues, file, indent=2)
 
 # Usage
 sonar_host = 'https://sonarcloud.io'
-project_key = 'dnaresh4_loans-service-restapi'
+project_key = 'loans-service-restapi'
 sonar_token = '273b52a0e0986e3d298f64e0768d31d01a0de09c'
-
 issues = get_sonar_issues(sonar_host, project_key, sonar_token)
-print(issues)
-with open('sonar_issues.json', 'w') as f:
-    json.dump(issues, f, indent=4)
+save_issues_to_file(issues, 'sonar_issues.json')
