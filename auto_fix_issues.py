@@ -2,7 +2,7 @@ import os
 import openai
 import json
 
-# Set up the OpenAI API key from the environment variable
+#Set up the OpenAI API key from the environment variable
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def load_issues(file_path):
