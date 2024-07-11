@@ -2,7 +2,7 @@ import requests
 import json
 
 def get_sonar_issues(sonar_host, project_key, sonar_token):
-    url = f"{sonar_host}/api/issues/search?componentKeys={project_key}"
+    url = f"https://sonarcloud.io/api/issues/search?componentKeys=dnaresh4_loans-service-restapi"
     headers = {
         'Authorization': f'Basic {sonar_token}',
     }
@@ -12,7 +12,7 @@ def get_sonar_issues(sonar_host, project_key, sonar_token):
 
 sonar_host = 'https://sonarcloud.io'
 project_key = 'dnaresh4_loans-service-restapi'
-sonar_token = 'YOUR_SONAR_TOKEN'
+sonar_token = '273b52a0e0986e3d298f64e0768d31d01a0de09c'
 
 issues = get_sonar_issues(sonar_host, project_key, sonar_token)
 with open('sonar_issues.json', 'w') as f:
