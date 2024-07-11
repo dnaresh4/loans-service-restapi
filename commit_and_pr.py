@@ -2,18 +2,34 @@ import subprocess
 import requests
 import sys
 
-
 def run_command(command):
     result = subprocess.run(command, shell=True, check=True, text=True, capture_output=True)
     return result.stdout.strip()
 
+def check_for_changes():
+    result = run_command("git status --porcelain")
+    return bool(result.strip())
 
 def commit_changes(branch_name):
+    if not check_for_changes():
+        print("No changes to commit.")
+        return False
+
+    run_command("git config --global user.email 'dnaresh4@gmail.com'")
+    run_command("git config --global user.name 'Naresh Darapaneni'")
+
     run_command(f"git checkout -b {branch_name}")
     run_command("git add .")
-    run_command("git commit -m 'Fix SonarQube issues'")
-    run_command(f"git push origin {branch_name}")
+    
+    try:
+        run_command("git commit -m 'Fix SonarQube issues'")
+    except subprocess.CalledProcessError as e:
+        print(f"Error during commit: {e}")
+        print(f"Command output: {e.output}")
+        return False
 
+    run_command(f"git push origin {branch_name}")
+    return True
 
 def create_pull_request(repo, title, body, head, base, token):
     url = f"https://api.github.com/repos/{repo}/pulls"
@@ -33,7 +49,6 @@ def create_pull_request(repo, title, body, head, base, token):
     else:
         print(f"Failed to create pull request: {response.status_code} - {response.text}")
 
-
 if __name__ == "__main__":
     repo = sys.argv[1]
     title = sys.argv[2]
@@ -42,5 +57,5 @@ if __name__ == "__main__":
     base = sys.argv[5]
     token = sys.argv[6]
 
-    commit_changes(head)
-    create_pull_request(repo, title, body, head, base, token)
+    if commit_changes(head):
+        create_pull_request(repo, title, body, head, base, token)
