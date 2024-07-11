@@ -1,4 +1,5 @@
 import requests
+import json
 
 def get_sonar_issues(sonar_host, project_key, sonar_token):
     url = f"{sonar_host}/api/issues/search?projectKeys={project_key}"
