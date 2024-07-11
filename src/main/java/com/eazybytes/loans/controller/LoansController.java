@@ -58,7 +58,8 @@ public class LoansController {
     public ResponseEntity<ResponseDto> createLoan(@RequestParam
                                                       @Pattern(regexp="(^$|[0-9]{10})",message = "Mobile number must be 10 digits")
                                                       String mobileNumber) {
-        mobileNumber=null;
+        int a = 30, b = 0;
+        int c = a/b;
         iLoansService.createLoan(mobileNumber);
         return null;
     }
