@@ -46,7 +46,7 @@ def run_git_command(command):
 
 def main():
     openai_api_key = os.getenv('OPENAI_API_KEY')
-    github_token = os.getenv('GITHUB_TOKEN')
+    github_token = os.getenv('GITHUBTOKEN')
     repo_name = os.getenv('GITHUB_REPOSITORY')
 
     if not all([openai_api_key, github_token, repo_name]):
