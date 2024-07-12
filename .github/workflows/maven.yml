@@ -65,7 +65,7 @@ jobs:
 
     - name: Commit and Push Changes
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         python commit_and_pr.py dnaresh4/loans-service-restapi 'Fix SonarQube issues using OpenAI' 'This PR fixes issues identified by SonarQube using OpenAI suggestions.' fix-sonar-issues main $GITHUB_TOKEN
 
