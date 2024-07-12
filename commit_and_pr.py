@@ -46,9 +46,11 @@ def run_git_command(command):
 
 def main():
     openai_api_key = os.getenv('OPENAI_API_KEY')
-    github_token = os.getenv('GITHUBTOKEN')
+    github_token = os.getenv('GITHUB_TOKEN')
     repo_name = os.getenv('GITHUB_REPOSITORY')
-
+    print(openai_api_key);
+    print(github_token);
+    print(repo_name);
     if not all([openai_api_key, github_token, repo_name]):
         raise ValueError("Missing required environment variables")
 
